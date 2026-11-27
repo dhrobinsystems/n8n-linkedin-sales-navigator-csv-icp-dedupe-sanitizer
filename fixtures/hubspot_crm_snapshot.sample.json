@@ -1,0 +1,80 @@
+{
+  "_comment": "Synthetic HubSpot lookup fixture used when SANDBOX_MODE=true. IDs use the zzz_TEST_ prefix.",
+  "companies": [
+    {
+      "id": "zzz_TEST_COMP_001",
+      "domain": "acme-robotics.example",
+      "name": "zzz_TEST Acme Robotics",
+      "lifecyclestage": "lead",
+      "do_not_contact": "false"
+    },
+    {
+      "id": "zzz_TEST_COMP_002",
+      "domain": "northstar-logistics.example",
+      "name": "zzz_TEST Northstar Logistics",
+      "lifecyclestage": "marketingqualifiedlead",
+      "do_not_contact": "false"
+    },
+    {
+      "id": "zzz_TEST_COMP_003",
+      "domain": "stellar-freight.example",
+      "name": "zzz_TEST Stellar Freight",
+      "lifecyclestage": "customer",
+      "do_not_contact": "false"
+    },
+    {
+      "id": "zzz_TEST_COMP_004",
+      "domain": "brightwave-analytics.example",
+      "name": "zzz_TEST BrightWave Analytics",
+      "lifecyclestage": "opportunity",
+      "do_not_contact": "false"
+    },
+    {
+      "id": "zzz_TEST_COMP_005",
+      "domain": "pioneer-grid.example",
+      "name": "zzz_TEST Pioneer Grid",
+      "lifecyclestage": "lead",
+      "do_not_contact": "false"
+    },
+    {
+      "id": "zzz_TEST_COMP_006",
+      "domain": "harbor-light-media.example",
+      "name": "zzz_TEST Harbor Light Media",
+      "lifecyclestage": "evangelist",
+      "do_not_contact": "false"
+    },
+    {
+      "id": "zzz_TEST_COMP_007",
+      "domain": "quietpeak-labs.example",
+      "name": "zzz_TEST QuietPeak Labs",
+      "lifecyclestage": "lead",
+      "do_not_contact": "true"
+    }
+  ],
+  "deals": [
+    {
+      "id": "zzz_TEST_DEAL_001",
+      "companyId": "zzz_TEST_COMP_004",
+      "dealname": "zzz_TEST Pilot Program",
+      "dealstage": "qualifiedtobuy"
+    },
+    {
+      "id": "zzz_TEST_DEAL_002",
+      "companyId": "zzz_TEST_COMP_005",
+      "dealname": "zzz_TEST Old Proposal",
+      "dealstage": "closedlost"
+    },
+    {
+      "id": "zzz_TEST_DEAL_003",
+      "companyId": "zzz_TEST_COMP_002",
+      "dealname": "zzz_TEST Lost Evaluation",
+      "dealstage": "closedlost"
+    },
+    {
+      "id": "zzz_TEST_DEAL_004",
+      "companyId": "zzz_TEST_COMP_003",
+      "dealname": "zzz_TEST Annual Contract",
+      "dealstage": "closedwon"
+    }
+  ]
+}
