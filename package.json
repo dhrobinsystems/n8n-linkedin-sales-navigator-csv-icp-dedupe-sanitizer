@@ -1,0 +1,28 @@
+{
+  "name": "n8n-linkedin-sales-navigator-csv-icp-dedupe-sanitizer",
+  "version": "1.0.0",
+  "description": "Cleans LinkedIn Sales Navigator CSV exports before sequencer upload: strips emoji and title noise, normalizes domains, applies ICP rules, checks HubSpot suppression, dedupes, and caps contacts per account. Zero dependencies.",
+  "license": "MIT",
+  "author": "dhRobin Systems",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "n8n",
+    "linkedin",
+    "sales-navigator",
+    "csv",
+    "hubspot",
+    "icp",
+    "deduplication",
+    "smartlead",
+    "instantly"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "build:workflow": "node scripts/build-workflow.js",
+    "check:workflow": "node scripts/build-workflow.js --check",
+    "sanitize": "node scripts/run-local.js"
+  }
+}
