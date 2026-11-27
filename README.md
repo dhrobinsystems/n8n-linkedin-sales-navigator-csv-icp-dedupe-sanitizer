@@ -19,6 +19,8 @@ The fixtures, tests, and docs use only `.example` domains and emails, documentat
 
 ## Architecture
 
+![Workflow Overview](assets/workflow-overview.png)
+
 ```
                  +--------------------+
  Sales Navigator | First Name, Title, |
