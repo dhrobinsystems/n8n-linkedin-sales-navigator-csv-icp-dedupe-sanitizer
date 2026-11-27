@@ -1,0 +1,8 @@
+{
+  "_comment": "Synthetic static suppression list. Domains here are never sent to the sequencer and never looked up in HubSpot.",
+  "domains": [
+    "suppressed-client.example",
+    "do-not-mail.example",
+    "legacy-partner.example"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "_comment": "Example ICP rules. Regexes are case-insensitive JavaScript patterns. Copy to a local file and point ICP_RULES_PATH at it.",
+  "titleInclude": [
+    "\\b(chief|ceo|cfo|coo|cto|cmo|cro|cio|cpo|cso|founder|co-?founder|owner|president|managing director|managing partner)\\b",
+    "\\b(vp|svp|evp|vice president|head|director|manager|lead)\\b.*\\b(sales|revenue|marketing|growth|demand|partnerships?|business development|operations|revops|go-to-market|gtm|commercial)\\b",
+    "\\b(sales|revenue|marketing|growth|demand generation|business development|revops|commercial)\\b.*\\b(vp|svp|evp|vice president|head|director|manager|lead)\\b",
+    "\\b(account executive|account manager|sales development representative|business development representative|sdr|bdr)\\b"
+  ],
+  "titleExclude": [
+    "\\b(intern|internship|student|trainee|assistant|recruiter|recruiting|talent acquisition|human resources|hr|professor|teacher|retired|unemployed|freelance|freelancer|seeking|job seeker|looking for)\\b"
+  ],
+  "seniorityWeights": {
+    "c_level": 100,
+    "vp": 80,
+    "director": 60,
+    "manager": 40,
+    "ic": 20
+  },
+  "seniorityPatterns": {
+    "c_level": "\\b(chief|ceo|cfo|coo|cto|cmo|cro|cio|cpo|cso|founder|co-?founder|managing director|managing partner)\\b|(?<!product[ -])\\bowner\\b|(?<!vice[ -])\\bpresident\\b",
+    "vp": "\\b(vice[ -]president|vp|svp|evp|avp)\\b",
+    "director": "\\b(director|head)\\b",
+    "manager": "\\b(manager|lead|supervisor)\\b"
+  },
+  "allowedRegions": [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "Ireland",
+    "Germany",
+    "France",
+    "Netherlands",
+    "Australia"
+  ],
+  "freemailBlocklist": [
+    "gmail.com",
+    "googlemail.com",
+    "yahoo.com",
+    "ymail.com",
+    "outlook.com",
+    "hotmail.com",
+    "live.com",
+    "msn.com",
+    "icloud.com",
+    "me.com",
+    "aol.com",
+    "proton.me",
+    "protonmail.com",
+    "gmx.com",
+    "gmx.net",
+    "mail.com",
+    "yandex.com",
+    "qq.com",
+    "163.com",
+    "comcast.net",
+    "verizon.net"
+  ],
+  "socialBlocklist": [
+    "linkedin.com",
+    "lnkd.in",
+    "facebook.com",
+    "instagram.com",
+    "twitter.com",
+    "x.com",
+    "youtube.com",
+    "tiktok.com",
+    "github.com",
+    "linktr.ee",
+    "about.me",
+    "bit.ly",
+    "medium.com",
+    "substack.com",
+    "wixsite.com",
+    "blogspot.com",
+    "wordpress.com"
+  ]
+}
